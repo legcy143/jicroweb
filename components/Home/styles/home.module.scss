@@ -1,0 +1,146 @@
+@import "../../../styles/mixins";
+
+.home_main{
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+.nav_home{
+    position: relative;
+    padding: 2rem;
+    @include flexBox(row , space-between , flex-start);
+    img{
+        height: 4rem;
+    }
+    ol{
+        @include flexBox(column , space-between , flex-end , 1rem);
+        list-style: none;
+        li{
+            cursor: pointer;
+            list-style:none;
+            opacity: 0.8;
+            text-transform: capitalize;
+            font-weight: 500;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        button{
+            padding: 0.7rem 2rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: none;
+            background-color: rgba(var(--primary-color-rgb) , 0.8);
+            box-shadow: 4px 4px 7px rgba(62, 62, 62, 0.1) inset
+            , -1px -1px 5px rgba(255, 255, 255, 0.1) inset;
+            font-weight: 700;
+            color: var(--theme-color);
+            &:hover{
+                background-color: rgba(var(--primary-color-rgb) ,1);
+            }
+            &:active{
+                opacity: 0.6;
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+
+
+.mobile_image{
+    height: 7rem;
+    @include flexBox();
+    img{
+        position: relative;
+        z-index: -1;
+        width: min(50rem , 95%);
+        filter: drop-shadow(1px 4px 30px rgba(5, 5, 5, 0.3));
+        animation: topbottom 4s infinite;
+    }
+}
+@keyframes topbottom {
+    0%{
+        opacity: 1;
+        margin-top: 0;
+    }
+    50%{
+        opacity: 0.7;
+        margin-top: 2rem;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0rem;
+    }
+}
+
+
+
+
+
+.footer_home{
+    padding:  3rem 7rem;
+   margin-top: auto; 
+   @include flexBox(row , space-between , flex-end);
+   flex-wrap: wrap
+}
+
+
+// .jicro_info_section{
+//     border: 1px solid #eee;
+// }
+.jicro_info{
+    @include flexBox(column , space-between , flex-end);
+    text-transform: capitalize;
+    p{
+        color: var(--secondry-color);
+        font-weight: 500;
+        text-shadow: 0px 0px 10px black;
+    }
+    h1{
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        font-family: var( --specail-font);
+    }
+}
+.social_icon{
+    @include flexBox(row , flex-start , flex-end);
+    margin-top: 1rem;
+    svg{
+        opacity: 0.5;
+        width: 2rem;
+        height: 2rem;
+        &:hover{
+            opacity: 1;
+        }
+
+    }
+}
+
+.readmore{
+    text-transform: capitalize;
+    opacity: 0.6;
+    transition: 0.30s ease;
+    cursor: pointer;
+    @include flexBox(column ,center, flex-end , 0.2rem);
+    svg{
+        transition: 0.30s ease;
+    }
+    &:hover{
+        opacity: 1;
+        svg{
+            margin-inline: 0.6rem;
+        }
+    }
+    &:active{
+        opacity: 0.5;
+    }
+}
+
+@media (max-width:750px) {
+    .footer_home{
+        padding: 2rem;
+    }
+}
