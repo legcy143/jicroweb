@@ -6,8 +6,10 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useRouter } from 'next/router';
 
 const HomeScreen = () => {
+  let router = useRouter();
   const [menustate, setmenustate] = useState(false)
   return (
     <main className={`${style.home_main}`}>
@@ -15,10 +17,11 @@ const HomeScreen = () => {
         <img src="/favicon.ico" alt="img" />
         <ol>
          <MenuIcon onClick={()=>{menustate == true ? setmenustate(false) : setmenustate(true)}}/>
-          <li>home</li>
-          <li>carrier</li>
-          <li>About us</li>
-          <li>Terms and condition</li>
+          <li onClick={()=>{setmenustate(false);router.push("/")}}>home</li>
+          <li onClick={()=>{setmenustate(false);router.push("/carrie")}}>carrier</li>
+          <li onClick={()=>{setmenustate(false);router.push("/about")}}>about us</li>
+          <li onClick={()=>{setmenustate(false);router.push("/contact")}}>contact us</li>
+          <li onClick={()=>{setmenustate(false);router.push("/termsandcondition")}}>terms and condition</li>
           <button>Download apk</button>
         </ol>
       </section>

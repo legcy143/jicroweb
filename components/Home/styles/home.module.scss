@@ -54,10 +54,11 @@
 }
 
 
-
 .mobile_image{
-    height: 7rem;
+    height: 5rem;
     @include flexBox();
+    margin: auto;
+    width: 98%;
     img{
         position: relative;
         z-index: -1;
@@ -80,9 +81,6 @@
         margin-top: 0rem;
     }
 }
-
-
-
 
 
 .footer_home{
@@ -194,12 +192,8 @@
     }
     @keyframes openmenu {
         0%{top:0; opacity: 0;}
-        50%{}
-        100%{}
     }
 }
-
-
 
 
 @media (max-width:550px) {
