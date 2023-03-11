@@ -1,21 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from "./styles/home.module.scss"
 import KeyboardTabIcon from '@mui/icons-material/KeyboardTab';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const HomeScreen = () => {
+  const [menustate, setmenustate] = useState(false)
   return (
-    <main className={style.home_main}>
-      <section className={style.nav_home}>
+    <main className={`${style.home_main}`}>
+      <section className={`${style.nav_home} ${menustate == true && style.menu_open} `}>
         <img src="/favicon.ico" alt="img" />
         <ol>
+         <MenuIcon onClick={()=>{menustate == true ? setmenustate(false) : setmenustate(true)}}/>
           <li>home</li>
           <li>carrier</li>
           <li>About us</li>
-          <button>Download</button>
+          <li>Terms and condition</li>
+          <button>Download apk</button>
         </ol>
       </section>
       <section className={style.mobile_image}>

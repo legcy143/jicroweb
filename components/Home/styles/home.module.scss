@@ -15,8 +15,12 @@
         height: 4rem;
     }
     ol{
+        position: relative;
         @include flexBox(column , space-between , flex-end , 1rem);
         list-style: none;
+        svg{
+            display: none;
+        }
         li{
             cursor: pointer;
             list-style:none;
@@ -34,9 +38,10 @@
             border: none;
             background-color: rgba(var(--primary-color-rgb) , 0.8);
             box-shadow: 4px 4px 7px rgba(62, 62, 62, 0.1) inset
-            , -1px -1px 5px rgba(255, 255, 255, 0.1) inset;
+            , -1px -1px 5px rgba(255, 255, 255, 0.1) inset , 0px 7px 20px rgba(0, 0, 0, 0.2);
             font-weight: 700;
             color: var(--theme-color);
+            backdrop-filter: blur(10px);
             &:hover{
                 background-color: rgba(var(--primary-color-rgb) ,1);
             }
@@ -56,7 +61,7 @@
     img{
         position: relative;
         z-index: -1;
-        width: min(50rem , 95%);
+        width: min(30rem , 75%);
         filter: drop-shadow(1px 4px 30px rgba(5, 5, 5, 0.3));
         animation: topbottom 4s infinite;
     }
@@ -68,7 +73,7 @@
     }
     50%{
         opacity: 0.7;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     100%{
         opacity: 1;
@@ -84,7 +89,6 @@
     padding:  3rem 7rem;
    margin-top: auto; 
    @include flexBox(row , space-between , flex-end);
-   flex-wrap: wrap
 }
 
 
@@ -106,7 +110,7 @@
     }
 }
 .social_icon{
-    @include flexBox(row , flex-start , flex-end);
+    @include flexBox(row , flex-start , flex-end , 1rem);
     margin-top: 1rem;
     svg{
         opacity: 0.5;
@@ -139,8 +143,85 @@
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:850px) {
     .footer_home{
         padding: 2rem;
+    }
+    .nav_home{
+        padding: 2.5rem 3rem 8rem;
+        align-items: center;
+        ol{
+            flex-direction: row-reverse;
+            align-items: center;
+            svg{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: block;
+            }
+            button{padding: 0.5rem 1.5rem;}
+            li{
+                display: none;
+            }
+        }
+    }
+    .menu_open{
+        ol{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0%;
+            right: 0%;
+            background-color: rgba(3, 3, 3, 0.612);
+            backdrop-filter: blur(20px);
+           @include flexBox(column ,center, center , 1rem);
+           animation: openmenu 0.30s ease;
+           li{
+            padding: 0.2rem 1rem;
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            // border: 1px solid #eee;
+           }
+            // button, li{width: min(20rem , 90%);}
+            // button{width: min(20rem , 90%)}
+           svg{
+            position: absolute;
+            top: 3rem;
+            right: 2.5rem;
+           }
+        }
+    }
+    @keyframes openmenu {
+        0%{top:0; opacity: 0;}
+        50%{}
+        100%{}
+    }
+}
+
+
+
+
+@media (max-width:550px) {
+    .nav_home{
+        padding: 2rem 1rem 6rem;
+    }
+    .footer_home{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .jicro_info{
+        p{
+            font-size: 0.8rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .readmore{
+        padding: 0.5rem;
+        gap: 1rem;
+        flex-direction: row;
     }
 }
