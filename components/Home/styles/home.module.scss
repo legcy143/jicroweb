@@ -1,224 +1,159 @@
 @import "../../../styles/mixins";
 
-.home_main{
+.home_main {
     position: relative;
     min-height: 100vh;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
-.nav_home{
-    position: relative;
-    padding: 2rem;
-    @include flexBox(row , space-between , flex-start);
-    img{
-        height: 4rem;
-    }
-    ol{
-        position: relative;
-        @include flexBox(column , space-between , flex-end , 1rem);
-        list-style: none;
-        svg{
-            display: none;
-        }
-        li{
-            cursor: pointer;
-            list-style:none;
-            opacity: 0.8;
-            text-transform: capitalize;
-            font-weight: 500;
-            &:hover{
-                opacity: 1;
-            }
-        }
-        button{
-            padding: 0.7rem 2rem;
-            border-radius: 0.5rem;
-            outline: none;
-            border: none;
-            background-color: rgba(var(--primary-color-rgb) , 0.8);
-            box-shadow: 4px 4px 7px rgba(62, 62, 62, 0.1) inset
-            , -1px -1px 5px rgba(255, 255, 255, 0.1) inset , 0px 7px 20px rgba(0, 0, 0, 0.2);
-            font-weight: 700;
-            color: var(--theme-color);
-            backdrop-filter: blur(10px);
-            &:hover{
-                background-color: rgba(var(--primary-color-rgb) ,1);
-            }
-            &:active{
-                opacity: 0.6;
-                transform: scale(0.9);
-            }
-        }
-    }
-}
 
 
-.mobile_image{
+.mobile_image {
     height: 5rem;
     @include flexBox();
     margin: auto;
     width: 98%;
-    img{
+
+    img {
         position: relative;
         z-index: -1;
-        width: min(30rem , 75%);
+        width: min(30rem, 75%);
         filter: drop-shadow(1px 4px 30px rgba(5, 5, 5, 0.3));
         animation: topbottom 4s infinite;
     }
 }
+
 @keyframes topbottom {
-    0%{
+    0% {
         opacity: 1;
         margin-top: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.7;
         margin-top: 3rem;
     }
-    100%{
+
+    100% {
         opacity: 1;
         margin-top: 0rem;
     }
 }
 
 
-.footer_home{
-    padding:  3rem 7rem;
-   margin-top: auto; 
-   @include flexBox(row , space-between , flex-end);
+.footer_home {
+    padding: 3rem 7rem;
+    margin-top: auto;
+    @include flexBox(row, space-between, flex-end);
 }
 
 
 // .jicro_info_section{
 //     border: 1px solid #eee;
 // }
-.jicro_info{
-    @include flexBox(column , space-between , flex-end);
+.jicro_info {
+    @include flexBox(column, space-between, flex-end);
     text-transform: capitalize;
-    p{
+
+    p {
         color: var(--secondry-color);
         font-weight: 500;
         text-shadow: 0px 0px 10px black;
     }
-    h1{
+
+    h1 {
         font-size: 4rem;
         letter-spacing: 0.2rem;
-        font-family: var( --specail-font);
+        font-family: var(--specail-font);
         font-weight: 900;
         opacity: 1;
         text-shadow: -1px -1px 0 #000000c0, 1px -1px 0 #000, -1px 1px 0 #000000b6, 1px 1px 0 #000000af;
     }
 }
-.social_icon{
-    @include flexBox(row , flex-start , flex-end , 1rem);
+
+.social_icon {
+    @include flexBox(row, flex-start, flex-end, 1rem);
     margin-top: 1rem;
-    svg{
+
+    svg {
         opacity: 0.5;
         width: 2rem;
         height: 2rem;
-        &:hover{
+
+        &:hover {
             opacity: 1;
         }
 
     }
 }
 
-.readmore{
+.readmore {
     text-transform: capitalize;
     opacity: 0.6;
     transition: 0.30s ease;
     cursor: pointer;
-    @include flexBox(column ,center, flex-end , 0.2rem);
-    svg{
+    @include flexBox(column, center, flex-end, 0.2rem);
+
+    svg {
         transition: 0.30s ease;
     }
-    &:hover{
+
+    &:hover {
         opacity: 1;
-        svg{
+
+        svg {
             margin-inline: 0.6rem;
         }
     }
-    &:active{
+
+    &:active {
         opacity: 0.5;
     }
 }
 
 @media (max-width:850px) {
-    .footer_home{
+    .footer_home {
         padding: 2rem;
-    }
-    .nav_home{
-        padding: 2.5rem 3rem 8rem;
-        align-items: center;
-        ol{
-            flex-direction: row-reverse;
-            align-items: center;
-            svg{
-                width: 2.5rem;
-                height: 2.5rem;
-                display: block;
-            }
-            button{padding: 0.5rem 1.5rem;}
-            li{
-                display: none;
-            }
-        }
-    }
-    .menu_open{
-        ol{
-            z-index: 10;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            top: 0%;
-            right: 0%;
-            background-color: rgba(3, 3, 3, 0.612);
-            backdrop-filter: blur(20px);
-           @include flexBox(column ,center, center , 1rem);
-           animation: openmenu 0.30s ease;
-           li{
-            padding: 0.2rem 1rem;
-            display: block;
-            font-size: 1.3rem;
-            font-weight: 600;
-            // border: 1px solid #eee;
-           }
-            // button, li{width: min(20rem , 90%);}
-            // button{width: min(20rem , 90%)}
-           svg{
-            position: absolute;
-            top: 3rem;
-            right: 2.5rem;
-           }
-        }
-    }
-    @keyframes openmenu {
-        0%{top:0; opacity: 0;}
     }
 }
 
 
 @media (max-width:550px) {
-    .nav_home{
+    .nav_home {
         padding: 2rem 1rem 6rem;
     }
-    .footer_home{
+
+    .footer_home {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
     }
-    .jicro_info{
-        p{
+
+    .jicro_info {
+        p {
             font-size: 0.8rem;
         }
-        h1{
+
+        h1 {
             font-size: 3rem;
         }
     }
-    .readmore{
+
+    .readmore {
         padding: 0.5rem;
         gap: 1rem;
         flex-direction: row;
     }
 }
+
+.homeNav{
+    padding: 3rem 2rem;
+    margin-bottom: 11rem;
+}
+@media (max-width:550px) {
+    .homeNav{
+        padding: 11rem;
+        margin-bottom: 5rem;
+       }
+    }

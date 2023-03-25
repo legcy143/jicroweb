@@ -1,0 +1,104 @@
+@import "../../../styles/mixins";
+
+.nav_home{
+    position: relative;
+    padding: 1rem;
+    @include flexBox(row , space-between , flex-start);
+    img{
+        height: 4rem;
+    }
+    ol{
+        position: relative;
+        @include flexBox(row , space-between , center , 1rem);
+        list-style: none;
+        svg{
+            display: none;
+        }
+        li{
+            cursor: pointer;
+            list-style:none;
+            opacity: 0.8;
+            text-transform: capitalize;
+            font-weight: 500;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        button{
+            padding: 0.7rem 2rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border: none;
+            background-color: rgba(var(--primary-color-rgb) , 0.8);
+            box-shadow: 4px 4px 7px rgba(62, 62, 62, 0.1) inset
+            , -1px -1px 5px rgba(255, 255, 255, 0.1) inset , 0px 7px 20px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            color: var(--theme-color);
+            backdrop-filter: blur(10px);
+            &:hover{
+                background-color: rgba(var(--primary-color-rgb) ,1);
+            }
+            &:active{
+                opacity: 0.6;
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .nav_home{
+        align-items: center;
+        ol{
+            flex-direction: row-reverse;
+            align-items: center;
+            svg{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: block;
+            }
+            button{padding: 0.5rem 1.5rem;}
+            li{
+                display: none;
+            }
+        }
+    }
+    .menu_open{
+        ol{
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0%;
+            right: 0%;
+            background-color: rgba(3, 3, 3, 0.612);
+            backdrop-filter: blur(20px);
+           @include flexBox(column ,center, center , 1rem);
+           animation: openmenu 0.30s ease;
+           li{
+            padding: 0.2rem 1rem;
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            // border: 1px solid #eee;
+           }
+            // button, li{width: min(20rem , 90%);}
+            // button{width: min(20rem , 90%)}
+           svg{
+            position: absolute;
+            top: 3rem;
+            right: 2.5rem;
+           }
+        }
+    }
+    @keyframes openmenu {
+        0%{top:0; opacity: 0;}
+    }
+}
+
+
+// @media (max-width:550px) {
+//     .nav_home{
+//         padding: 1rem;
+//     }
+// }

@@ -2,7 +2,10 @@ import React from 'react'
 
 const termsandcondition = () => {
   return (
-    <div>termsandcondition</div>
+    <main>
+        <h1>terms and condition</h1>
+        <p>jicro</p>
+    </main>
   )
 }
 
