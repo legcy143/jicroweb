@@ -1,8 +1,12 @@
+import Nav from '@/components/Home/Nav'
 import React from 'react'
 
 const carrier = () => {
   return (
-    <div>carrier</div>
+    <div>
+      <Nav />
+      carrier
+      </div>
   )
 }
 

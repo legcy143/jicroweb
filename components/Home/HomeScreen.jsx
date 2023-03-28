@@ -5,13 +5,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import MenuIcon from '@mui/icons-material/Menu';
-import { useRouter } from 'next/router';
 import Nav from './Nav';
 
 const HomeScreen = () => {
-  let router = useRouter();
-  const [menustate, setmenustate] = useState(false)
   return (
     <main className={`${style.home_main}`}>
       <Nav className={style.homeNav} />
