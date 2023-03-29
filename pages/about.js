@@ -1,5 +1,5 @@
 import Nav from '@/components/Home/Nav'
-import OwnerCard from '@/components/OwnerCard'
+import OwnerCard from '@/components/utlis/OwnerCard'
 import React, { Children } from 'react'
 import style from "./styles/about.module.scss"
 

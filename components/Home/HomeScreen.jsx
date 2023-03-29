@@ -6,10 +6,12 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Nav from './Nav';
+import BackgroudGrad from '../background/BackgroudGrad';
 
 const HomeScreen = () => {
   return (
     <main className={`${style.home_main}`}>
+       {/* <BackgroudGrad />  */}
       <Nav className={style.homeNav} />
       <section className={style.mobile_image}>
         <img src="mobile.png" alt="" />
