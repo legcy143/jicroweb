@@ -19,7 +19,7 @@ const Nav = (props) => {
       <li  className={`${path == "/about" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/about")}}>about us</li>
       <li  className={`${path == "/termsandcondition" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/termsandcondition")}}>terms and condition</li>
       <button style={props.btnstyle}>
-        <img src="./playstoreicon.png" alt="" />
+        <img src="/playstoreicon.png" alt="" />
         <div>
         <p>get it on</p>
         <h1>google play</h1>
