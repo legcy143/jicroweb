@@ -1,11 +1,10 @@
-import Nav from '@/components/Home/Nav'
 import React from 'react'
+
 
 const carrier = () => {
   return (
     <div>
-      <Nav />
-      carrier
+      <h1 style={{textAlign:"center"}}>comming soon</h1>
       </div>
   )
 }

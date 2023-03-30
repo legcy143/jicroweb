@@ -8,7 +8,7 @@
 
 :root{
   --theme-bg:"black";
-  --theme-color: rgba(221, 221, 221, 0.936);
+  --theme-color: rgba(0, 0, 0, 0.936);
   
   --black-rgb: 1, 1, 1;
 
@@ -35,7 +35,8 @@ html{
   user-select: none;
 }
 body{
-  background-color: rgb(71, 65, 196);
+  // background-color: rgb(71, 65, 196);
+  background-color: rgb(216, 216, 216);
   // font-family: "Poppins" , sans-serif;
   font-family: 'Montserrat', sans-serif;
   color: var(--theme-color);

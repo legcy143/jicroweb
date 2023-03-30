@@ -5,6 +5,8 @@ import { useRouter } from 'next/router';
 
 const Nav = (props) => {
     let router = useRouter();
+    let path = router.pathname
+    console.log("path => " , path)
     let menuref = useRef();
     const [menustate, setmenustate] = useState(false)
   return (
@@ -12,12 +14,17 @@ const Nav = (props) => {
     <img src="/logo_mini.png" alt="img" />
     <ol>
      <MenuIcon onClick={()=>{menustate == true ? setmenustate(false) : setmenustate(true)}}/>
-      <li onClick={()=>{setmenustate(false);router.push("/")}}>home</li>
-      <li onClick={()=>{setmenustate(false);router.push("/carrier")}}>carrier</li>
-      <li onClick={()=>{setmenustate(false);router.push("/about")}}>about us</li>
-      {/* <li onClick={()=>{setmenustate(false);router.push("/contact")}}>contact us</li> */}
-      <li onClick={()=>{setmenustate(false);router.push("/termsandcondition")}}>terms and condition</li>
-      <button style={props.btnstyle}>Download apk</button>
+      <li className={`${path == "/" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/")}}>home</li>
+      <li className={`${path == "/carrier" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/carrier")}}>carrier</li>
+      <li  className={`${path == "/about" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/about")}}>about us</li>
+      <li  className={`${path == "/termsandcondition" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/termsandcondition")}}>terms and condition</li>
+      <button style={props.btnstyle}>
+        <img src="./playstoreicon.png" alt="" />
+        <div>
+        <p>get it on</p>
+        <h1>google play</h1>
+        </div>
+        </button>
     </ol>
   </section>
   )
