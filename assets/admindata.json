@@ -1,0 +1,113 @@
+ [
+
+    {
+        "name": "Sidhant",
+        "img": "/admins/sid.jpg",
+        "role" : "co-founder and ceo",
+        "socailLink": [
+            {
+                "instagram": "",
+                "facebook": "insta",
+                "linkdin": "linkdin",
+                "Twiter": "Twiter"
+            }
+        ],
+        "bio": "Siddhant is one of the young entrepreneurs and tech guys responsible for how he can provide the best tech and the fastest, most seamless experience possible while eliminating all competitors and also to check that everyone is satisfied with our product. We aim to deliver innovative solutions and the highest quality service to ensure our customers get the most out of their experience with us. Though still emerging in the field, Siddhant and his team have the vision, skills, and passion to build products and services that transform how people live and work."
+    },
+    {
+        "name": "Prince Raj",
+        "img": "./logo.png",
+        "socailLink": [
+            {
+                "instagram": "insta",
+                "facebook": "insta",
+                "linkdin": "linkdin",
+                "Twiter": "Twiter"
+            }
+        ],
+        "bio": "  I am  widely regarded as one of the top coders and entrepreneurs of his generation. I  continues to inspire others with my creativity, ingenuity, and unwavering dedication to my craftAs i honed my skills, I started to attract attention from peers and mentors alike, impressing them with my ability to solve complex problems and create innovative solutions. It wasn't long before i was sought after by tech companies eager to harness his talents."
+    },
+    {
+        "name": "Raj",
+        "img": "/admins/raj.jpg",
+        "role" : "co-founder and cmo",
+        "socailLink": [
+            {
+                "instagram": "insta",
+                "facebook": "insta",
+                "linkdin": "linkdin",
+                "Twiter": ""
+            }
+        ],
+        "bio": "Under Raj leadership, Jicro has developed cutting-edge software applications and platforms that have revolutionized the way people interact with technology. His company has also earned recognition for its commitment to ethical business practices and social responsibility, reflecting Raj's deep sense of purpose and his desire to make a positive impact on the world."
+    },
+    {
+        "name": " Gautam kabra",
+        "img": "/admins/gautamkabra.jpg",
+        "socailLink": [
+            {
+                "instagram": "https://instagram.com/gaautammm_?igshid=YmMyMTA2M2Y=",
+                "facebook": "insta",
+                "linkdin": "https://www.linkedin.com/in/parth-kabra-48879123a",
+                "Twiter": " https://twitter.com/GautamKabra?t=JSmrZgekgV3ydKqp32lndQ&s=08"
+            }
+        ],
+        "bio": "In addition to his marketing expertise, I am  also known for his strong leadership skills and ability to inspire and motivate teams. He has a reputation for fostering a positive work culture that values collaboration, creativity, and continuous learning."
+    },
+    {
+        "name": "Tushar Burman",
+        "img": "/admins/tusharbhiya.jpg",
+        "socailLink": [
+            {
+                "instagram": "https://instagram.com/foot.tushar.baller?igshid=YmMyMTA2M2Y=",
+                "facebook": "https://www.facebook.com/Tushar.burman1?mibextid=LQQJ4d",
+                "linkdin": "https://www.linkedin.com/in/tushar-burman-39b504258",
+                "Twiter": "@ft_tushar0"
+            }
+        ],
+        "bio": "In addition to his technical expertise, Tushar is also a gifted communicator and collaborator. He is able to work effectively with teams of all sizes and is known for his ability to inspire and motivate others to achieve their goals."
+    },
+    {
+        "name": "Talib Shiekh ",
+        "img": "/admins/talib.jpg",
+        "socailLink": [
+            {
+                "instagram": "https://instagram.com/talibshaib?igshid=ZDdkNTZiNTM=",
+                "facebook": "insta",
+                "linkdin": "https://www.linkedin.com/in/talib-sheikh-385a85251",
+                "Twiter": "Twiter"
+            }
+        ],
+        "bio": " Myself Talib Sheik Studing Information Technology. I am eager to learn and grow both personally and professionally. I am passionate about technolgy and am actively seeking opportunities to get involve and make a difference . In future I hope to use my knowledge to make a poositive impact in the tech. I am always open to new experiences and am exicted to see where my destiny will take me. "
+    },
+    {
+        "name": "Lalit Verma", 
+        "img": "/admins/lalitverma.jpg",
+        "socailLink": [
+            {
+                "instagram": "https://instagram.com/mr_lala18?igshid=ZDdkNTZiNTM=",
+                "facebook": "insta",
+                "linkdin": "https://www.linkedin.com/in/lalit-varma-9497b2270",
+                "Twiter": "https://twitter.com/Mrlalitvarma?t=-_J-YK8AaD_aCzlHnbW4yw&s=08"
+            }
+        ],
+        "bio": "My self Lalit and i am pursuing my bachelor degree in Computer science , i hold a curious personality that make me eager to know the things Surrounding myself as i am a cs student"
+    },
+    {
+        "name": "Manish Kumar",
+        "img": "/admins/manish.jpg",
+        "socailLink": [
+            {
+                "instagram": "https://instagram.com/_itzmanish786?igshid=ZDdkNTZiNTM=",
+                "facebook": "insta",
+                "linkdin": "https://www.linkedin.com/in/manish-kumar-9a293526b",
+                "Twiter": "Twiter"
+            }
+        ],
+        "bio": " I remains humble and always willing to learn. He is a constant student of technology, always seeking to expand his knowledge and explore new possibilities"
+    }
+    
+    
+    
+    ]
+    

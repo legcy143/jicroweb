@@ -15,25 +15,34 @@
         font-size: 0.9rem;
     }
 }
+
+.container{
+    margin: auto;
+    width: min(60rem , 90%);
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
 .tandcContainer{
     margin: auto;
-    padding: 1rem;
-    background: rgba(39, 29, 97, 0.05);
     width: min(60rem , 90%);
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 21px -5px rgba(0, 0, 0, 0.1);
     text-transform: capitalize;
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+    
     h1{
         // text-align: center;
-        margin: 0.2rem 0rem;
+        margin: 2.5rem 0rem 0.5rem;
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        opacity: 0.9;
     }
     p{
-        line-height: 1.4rem;
-        word-spacing: 0.1rem;
+        line-height: 1.2rem;
+        word-spacing: 0.04rem;
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: 0.93rem;
     }
 }
 

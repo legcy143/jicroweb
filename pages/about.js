@@ -1,17 +1,56 @@
 
-import OwnerCard from '@/components/utlis/OwnerCard'
-import React, { Children } from 'react'
+import React, { Children , useState , useEffect} from 'react'
 import style from "./styles/about.module.scss"
+// import admindata from "../assets/admins/admindata"
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import axios from 'axios';
 
 const About = () => {
+  const [admindata, setadmindata] = useState()
+  useEffect(() => {
+    axios.get('http://localhost:3000/api/admin').then((i)=>{console.log("admindata api => " , i.data.data);setadmindata(i.data.data)})
+  }, [])
+  
+  // console.log("admindata json => " , admindata)
   return (
     <div className={style.aboutPage}>
       {/* <h1 className={style.AboutText}>about us</h1> */}
       <AboutTeam />
+
       <div className={style.cardContainer}>
-      <OwnerCard/>
-      <OwnerCard/>
-      <OwnerCard/>
+
+     {admindata?.map((e)=>{
+      return(
+          <div className={style.card} key={e.key}>
+      <div className={style.card_img}>
+      <img src={e.img} alt="img" />
+      <p>{e.name}</p>
+      <span>{e.role}</span>
+      </div>
+      <div className={style.socail_link}>
+        {
+          e.socailLink?.map((i)=>{
+            return(
+              <>
+              {i.instagram && <a href={i.instagram} target="_blank"><InstagramIcon/></a>}
+              {i.facebook && <a href={i.facebook}><FacebookIcon/></a>}
+              {i.linkdin && <a href={i.linkdin}><InstagramIcon/></a>}
+              {i.Twiter && <a href={i.Twiter}><TwitterIcon/></a>}
+              </>
+            )
+          })
+        }
+      </div>
+      <p className={style.paragraph}>{e.bio}</p>
+    </div>
+      )
+})}
+
+      {/* <OwnerCard/>
+      <OwnerCard/> */}
       </div>
     </div>
   )

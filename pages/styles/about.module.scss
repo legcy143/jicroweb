@@ -15,11 +15,8 @@
 }
 .AboutContainer{
     margin: auto;
-    padding: 2rem;
-    background: rgba(39, 29, 97, 0.1);
     width: min(60rem , 90%);
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 21px -5px rgba(0, 0, 0, 0.25);
     text-transform: capitalize;
     h1{
         text-align: center;
@@ -30,13 +27,64 @@
     p{
         opacity: 0.9;
         line-height: 1.4rem;
-        word-spacing: 0.2rem;
+        word-spacing: 0.1rem;
         font-weight: 500;
     }
 }
 
 .cardContainer{
+    width: min(60rem , 100%);
+    padding: 1rem;
     margin: 2rem auto;
-    @include flex_box();
-    flex-wrap: wrap;
+    @include gridwrap(15rem , 1rem , 1fr)
+}
+
+.card{
+    padding:2rem 1rem;
+    // width: min(20rem , 95%);
+    // border: 1px solid #eee;
+    @include flex_box(column , flex-start , center);
+    background: rgba(97, 90, 135, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 21px -5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20);
+}
+.card_img{
+    height: 8rem;
+    width: 100%;
+    @include flex_box(column);
+    gap: 0rem;
+    img{
+        height: 80%;
+        background-color: rgba(135, 135, 135, 0.87);
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    p{
+        margin: 0.5rem  auto  0rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    span{
+        display: block;
+        font-weight: 500;
+        font-size: 0.8rem;
+        opacity: 0.9;
+        color: rgb(72, 72, 72)
+    }
+}
+
+.socail_link{
+    @include flex_box(row , center , center , 1rem);
+    margin: 1rem auto;
+    a{
+        color: black;
+    }
+}
+.paragraph{
+    margin-top: 1rem;
+    font-size: 0.93rem;
+    line-height: 1.2rem;
+    font-weight: 500;
 }
