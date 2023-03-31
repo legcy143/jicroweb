@@ -7,9 +7,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import axios from 'axios';
+import LoopIcon from '@mui/icons-material/Loop';
 
 const About = () => {
-  const [admindata, setadmindata] = useState()
+  const [admindata, setadmindata] = useState([{name:"loading ..." , bio:<LoopIcon className={style.loadingspin}/>}])
   useEffect(() => {
     if(typeof window != undefined){
       let url = window.location.origin
@@ -29,7 +30,7 @@ const About = () => {
       return(
           <div className={style.card} key={e.name}>
       <div className={style.card_img}>
-      <img src={e.img} alt="img" />
+      <img src={e.img} alt="" />
       <p>{e.name}</p>
       <span>{e.role}</span>
       </div>

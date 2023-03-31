@@ -88,3 +88,18 @@
     line-height: 1.2rem;
     font-weight: 500;
 }
+
+.loadingspin{
+    animation: spin 1s ease infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
