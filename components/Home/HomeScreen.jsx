@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import MailIcon from '@mui/icons-material/Mail';
 
 const HomeScreen = () => {
   return (
@@ -27,6 +28,9 @@ const HomeScreen = () => {
           </a>
           <a href="facebook">
             <FacebookIcon />
+          </a>
+          <a href="mailto:legcy143@gmail.com">
+            <MailIcon />
           </a>
           </div>
       </div>
