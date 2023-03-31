@@ -13,9 +13,7 @@ const About = () => {
   useEffect(() => {
     if(typeof window != undefined){
       let url = window.location.origin
-      console.log(`\nwindow`)
-      console.log(window.location.origin)
-      axios.get(`${url}/api/admin`).then((i)=>{console.log("admindata api => " , i.data.data);setadmindata(i.data.data)})
+      axios.get(`${url}/api/admin`).then((i)=>{setadmindata(i.data.data)})
     }
     }, [])
   

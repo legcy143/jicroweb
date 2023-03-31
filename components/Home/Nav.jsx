@@ -4,7 +4,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useRouter } from 'next/router';
 import PlayStoreIcon from "../../assets/playstoreIcon.png"
 import Image from 'next/image';
-console.log("PlayStoreIcon => " , PlayStoreIcon)
 
 const Nav = (props) => {
     let router = useRouter();
