@@ -11,8 +11,13 @@ import axios from 'axios';
 const About = () => {
   const [admindata, setadmindata] = useState()
   useEffect(() => {
-    axios.get('http://localhost:3000/api/admin').then((i)=>{console.log("admindata api => " , i.data.data);setadmindata(i.data.data)})
-  }, [])
+    if(typeof window != undefined){
+      let url = window.location.origin
+      console.log(`\nwindow`)
+      console.log(window.location.origin)
+      axios.get(`${url}/api/admin`).then((i)=>{console.log("admindata api => " , i.data.data);setadmindata(i.data.data)})
+    }
+    }, [])
   
   // console.log("admindata json => " , admindata)
   return (
@@ -20,30 +25,28 @@ const About = () => {
       {/* <h1 className={style.AboutText}>about us</h1> */}
       <AboutTeam />
 
+      <h1 style={{textAlign:"center" , fontSize:"1.5rem" ,marginTop:"5rem"}}>Our Team</h1>
       <div className={style.cardContainer}>
-
      {admindata?.map((e)=>{
       return(
-          <div className={style.card} key={e.key}>
+          <div className={style.card} key={e.name}>
       <div className={style.card_img}>
       <img src={e.img} alt="img" />
       <p>{e.name}</p>
       <span>{e.role}</span>
       </div>
-      <div className={style.socail_link}>
         {
           e.socailLink?.map((i)=>{
             return(
-              <>
+              <div className={style.socail_link} key={i.instagram}>
               {i.instagram && <a href={i.instagram} target="_blank"><InstagramIcon/></a>}
               {i.facebook && <a href={i.facebook}><FacebookIcon/></a>}
               {i.linkdin && <a href={i.linkdin}><InstagramIcon/></a>}
               {i.Twiter && <a href={i.Twiter}><TwitterIcon/></a>}
-              </>
+              </div>
             )
           })
         }
-      </div>
       <p className={style.paragraph}>{e.bio}</p>
     </div>
       )
