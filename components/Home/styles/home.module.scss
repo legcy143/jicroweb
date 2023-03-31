@@ -84,7 +84,11 @@
 .social_icon {
     @include flexBox(row, flex-start, flex-end, 1rem);
     margin-top: 1rem;
-
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
     svg {
         opacity: 0.5;
         width: 2rem;

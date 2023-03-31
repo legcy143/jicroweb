@@ -16,10 +16,18 @@ const HomeScreen = () => {
         <h1>the platform for all to grow with us</h1>
         <p>kuch mart karo bus zikr karo</p>
         <div className={style.social_icon}>
-            <InstagramIcon data="you-tube" />
+          <a href="https://www.instagram.com/jicroindia/">
+            <InstagramIcon/>
+          </a>
+          <a href="youtube">
             <YouTubeIcon />
+          </a>
+          <a href="twitter">
             <TwitterIcon />
+          </a>
+          <a href="facebook">
             <FacebookIcon />
+          </a>
           </div>
       </div>
 

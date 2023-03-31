@@ -3,13 +3,13 @@
     {
         "name": "Sidhant",
         "img": "/admins/sid.jpg",
-        "role" : "co-founder and ceo",
+        "role" : "CO-FOUNDER and CEO",
         "socailLink": [
             {
-                "instagram": "",
-                "facebook": "insta",
+                "instagram": "https://www.instagram.com/siddhant.764/",
+                "facebook": "",
                 "linkdin": "linkdin",
-                "Twiter": "Twiter"
+                "Twiter": ""
             }
         ],
         "bio": "Siddhant is one of the young entrepreneurs and tech guys responsible for how he can provide the best tech and the fastest, most seamless experience possible while eliminating all competitors and also to check that everyone is satisfied with our product. We aim to deliver innovative solutions and the highest quality service to ensure our customers get the most out of their experience with us. Though still emerging in the field, Siddhant and his team have the vision, skills, and passion to build products and services that transform how people live and work."
@@ -19,7 +19,7 @@
         "img": "./logo.png",
         "socailLink": [
             {
-                "instagram": "insta",
+                "instagram": "https://www.instagram.com/__prince_____raj__/",
                 "facebook": "insta",
                 "linkdin": "linkdin",
                 "Twiter": "Twiter"
@@ -30,23 +30,23 @@
     {
         "name": "Raj",
         "img": "/admins/raj.jpg",
-        "role" : "co-founder and cmo",
+        "role" : "CO-FOUNDER and CMO",
         "socailLink": [
             {
-                "instagram": "insta",
-                "facebook": "insta",
+                "instagram": "https://www.instagram.com/ohk_raj/",
+                "facebook": "",
                 "linkdin": "linkdin",
-                "Twiter": ""
+                "Twiter": "Twiter"
             }
         ],
-        "bio": "Under Raj leadership, Jicro has developed cutting-edge software applications and platforms that have revolutionized the way people interact with technology. His company has also earned recognition for its commitment to ethical business practices and social responsibility, reflecting Raj's deep sense of purpose and his desire to make a positive impact on the world."
+        "bio": "Raj, is a young entrepreneur currently pursuing his 12th grade education at Birla Public School. He possesses exceptional leadership qualities and serves as the head of marketing at Jicro. Through his innovative strategies, Raj has provided excellent services to customers, leading to rapid expansion of the company. He has focused on finding the most effective business model for Jicro, resulting in significant growth in revenue. Raj's efforts have enabled Jicro to outperform all competitors in the market. Overall, his contributions to Jicro have been invaluable and have played a crucial role in the company's success"
     },
     {
         "name": " Gautam kabra",
         "img": "/admins/gautamkabra.jpg",
         "socailLink": [
             {
-                "instagram": "https://instagram.com/gaautammm_?igshid=YmMyMTA2M2Y=",
+                "instagram": "https://www.instagram.com/gaautammm_/",
                 "facebook": "insta",
                 "linkdin": "https://www.linkedin.com/in/parth-kabra-48879123a",
                 "Twiter": " https://twitter.com/GautamKabra?t=JSmrZgekgV3ydKqp32lndQ&s=08"
@@ -59,7 +59,7 @@
         "img": "/admins/tusharbhiya.jpg",
         "socailLink": [
             {
-                "instagram": "https://instagram.com/foot.tushar.baller?igshid=YmMyMTA2M2Y=",
+                "instagram": "https://www.instagram.com/foot.tushar.baller/",
                 "facebook": "https://www.facebook.com/Tushar.burman1?mibextid=LQQJ4d",
                 "linkdin": "https://www.linkedin.com/in/tushar-burman-39b504258",
                 "Twiter": "@ft_tushar0"

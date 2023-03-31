@@ -8,11 +8,10 @@ import Image from 'next/image';
 const Nav = (props) => {
     let router = useRouter();
     let path = router.pathname
-    let menuref = useRef();
     const [menustate, setmenustate] = useState(false)
   return (
-    <section className={`${style.nav_home}  ${props.className} ${menustate == true && style.menu_open}`} style={props.style} ref={props.ref}>
-    <img src="/logo_mini.png" alt="img" />
+    <section className={`${style.nav_home}  ${props.className} ${path != "/" && style.borderNav} ${menustate == true && style.menu_open}`}   style={props.style} ref={props.ref}>
+    <img src="/logo_mini.png" alt="img"  onClick={()=>{router.push("/")}}/>
     <ol>
      <MenuIcon onClick={()=>{menustate == true ? setmenustate(false) : setmenustate(true)}}/>
       <li className={`${path == "/" && style.activeLi}`} onClick={()=>{setmenustate(false);router.push("/")}}>home</li>
