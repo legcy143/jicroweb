@@ -6,12 +6,14 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import MailIcon from '@mui/icons-material/Mail';
+import Homebg from './Homebg';
 
 const HomeScreen = () => {
   return (
     <main className={`${style.home_main}`}>
       <section className={style.mobile_image}>
         <img src="mobile.png" alt="" />
+      <Homebg/>
       </section>
       <div className={style.footerText}>
         <h1>the platform for all to grow with us</h1>

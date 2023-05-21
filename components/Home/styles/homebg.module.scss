@@ -1,0 +1,22 @@
+@import "../../../styles/mixins";
+
+.homebg{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    // background-color: red;
+    border: 1px solid #eee;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight{
+    margin: auto;
+    width: min(15rem , 30%);
+    aspect-ratio: 1/1;
+    background-color: rgba(var(--primary-color-rgb) , 0.2);
+    filter: blur(140px);
+}
