@@ -11,7 +11,7 @@ const privacypolicy = () => {
             <div className={style.tandcContainer}>
                 <p className={style.container}>
                     Effective Date: 21 may 2023 <br />
-                    Thank you for using Jicro ("the App"). This Privacy Policy outlines how we collect, use, disclose, and protect your personal information as a user of the App. By accessing or using the App, you agree to the terms of this Privacy Policy.
+                    Thank you for using Jicro. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information as a user of the App. By accessing or using the App, you agree to the terms of this Privacy Policy.
                 </p>
                 <h1>
                     Information We Collect
@@ -73,14 +73,14 @@ const privacypolicy = () => {
                 </h1>
                 <p>
 
-                    5.1 Account Settings: You can review and update your account information within the App's settings. <br />
+                    5.1 Account Settings: You can review and update your account information within the App{"'"}s settings. <br />
                     5.2 Marketing Communications: You have the option to unsubscribe from marketing communications by following the instructions provided in the messages.<br />
-                    5.3 Device Permissions: You can control the App's access to certain device permissions through your device settings.
+                    5.3 Device Permissions: You can control the App{"'"}s access to certain device permissions through your device settings.
 
                 </p>
                 <h1>
 
-                    Children's Privacy
+                    Children{"'"}s Privacy
                 </h1>
                 <p>
                     The App is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us to have it removed.
