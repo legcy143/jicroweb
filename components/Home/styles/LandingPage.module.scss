@@ -1,0 +1,11 @@
+@import "../../../styles/mixins";
+
+.heroSection{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    @include flexBox();
+    padding: 3rem 1rem;
+    section{
+        
+    }
+}
