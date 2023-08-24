@@ -32,7 +32,7 @@ const About = () => {
       <div className={style.card_img}>
       <img src={e.img} alt="" />
       <p>{e.name}</p>
-      <span>{e.role}</span>
+      {/* <span>{e.role}</span> */}
       </div>
         {
           e.socailLink?.map((i)=>{
@@ -46,7 +46,7 @@ const About = () => {
             )
           })
         }
-      <p className={style.paragraph}>{e.bio}</p>
+      {/* <p className={style.paragraph}>{e.bio}</p> */}
     </div>
       )
 })}

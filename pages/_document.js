@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <title>jicro india</title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       <Head />
       <body>
         <Main />
